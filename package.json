@@ -2,7 +2,7 @@
   "name": "notify-browser",
   "version": "0.0.4",
   "description": "",
-  "main": "dist/notifyBrowser.js",
+  "main": "dist/notifyBrowser.bundle.js",
   "scripts": {
     "build": "webpack -p",
     "build-dev": "webpack -d",
