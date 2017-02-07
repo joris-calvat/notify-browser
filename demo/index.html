@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../dist/pdpPushDesktop.bundle.js"></script>
+    <script>
+    var pushHello = () => {
+        pdpPushDesktop.default.push('hello', {
+            icon: 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/12742068_10153440870026167_4127360052773543768_n.png?oh=ee14ef47be4c19c8005d1ad7843e3811&oe=590E5042'
+        })
+        .then(() => {
+            console.log('done')})
+        .catch((e) => {
+            console.log(e)
+        });
+    }
+
+    </script>
+  </head>
+  <body>
+    <input type="button" value="send desktop notification" onclick="pushHello()" />
+    <!-- page content -->
+  </body>
+</html>
