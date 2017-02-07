@@ -33,7 +33,7 @@ const requestPermission = () => {
 
 
 
-const pdpPushDesktop = {
+const notifyBrowser = {
 
     push(message, options) {
         return new Promise((resolve, reject) => {
@@ -66,6 +66,6 @@ const pdpPushDesktop = {
     }
 };
 
-window.pdpPushDesktop = pdpPushDesktop;
+window.notifyBrowser = notifyBrowser;
 
-export default pdpPushDesktop;
+export default notifyBrowser;

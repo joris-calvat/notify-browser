@@ -1,12 +1,12 @@
 
 module.exports = {
     entry: {
-        pdpPushDesktop: './src/pdp-push-desktop.js',
+        notifyBrowser: './src/notify-browser.js',
     },
     output: {
         path: "./dist",
         filename: "[name].bundle.js",
-        library: 'pdpPushDesktop',
+        library: 'notifyBrowser',
         libraryTarget: 'umd'
     },
     module: {
